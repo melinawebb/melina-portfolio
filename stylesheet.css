@@ -31,7 +31,7 @@ h4 {
     padding: 0px; 
     margin: 0px; 
     margin-bottom: 10px; 
-    margin-top: 10px; 
+    margin-top: 20px; 
 }
 
 p {
@@ -42,6 +42,7 @@ p {
     text-align: center; 
     padding: 0px; 
     margin: 0px; 
+    display: inline-block;
 }
 
 /* Global End */ 
@@ -82,11 +83,16 @@ p {
 
 .melina {
     display: flex;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
   }
-  
-  
+
+  .container {
+      width: 45%;
+
+  }
+
   .description { 
       font-family: 'Open Sans', sans-serif;
       font-weight: lighter;
@@ -108,20 +114,15 @@ p {
 }
 
 .work {
-    padding: 0px; 
-    margin-top: 100px; 
+    padding: 30px; 
+    margin-top: 75px; 
 }
 
 .work-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem; 
-    text-align: center;
-    background-repeat:no-repeat;
-    background-size: cover;
-    padding-bottom: 0px;
-    margin: 50px; 
-    margin-top: 0px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projects { 
@@ -134,7 +135,8 @@ p {
 }
 
 .tindog {
-    padding: 50px; 
+    padding: 0px; 
+    margin: 35px; 
 }
 
 .tindog img {
@@ -148,7 +150,8 @@ p {
 }
 
 .emojipedia {
-    padding: 50px; 
+    padding: 0px; 
+    margin: 35px; 
 }
 
 .hvr-grow {
@@ -175,6 +178,10 @@ p {
 
 
 /* About Me Start */
+.about-me {
+    margin-top: 75px; 
+}
+
 .p1 {
     padding: 10px;
 }
@@ -191,6 +198,13 @@ ul {
     font-size: 24px;
     padding: 0; 
     margin: 1px;
+}
+
+.background-info {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .button1 {
