@@ -66,19 +66,24 @@ body {
     margin-top: 50px;
   }
 
+.logo-svg {
+    width: 120px; 
+    height: auto;
+}
+
 .nav {
     list-style:none;
     margin:0;
     padding:0;
-    padding-top: 30px; 
-    padding-bottom: 30px;
+    padding-top: 5px; 
+    padding-bottom: 10px;
     margin-top: 50px; 
     margin-bottom: 50px;
     text-align:center;
     color: #344055;
     font-family: 'Open Sans', sans-serif; 
     font-size: 32px;
-    border: 0px, black;
+    border: 2px, black;
     box-shadow: 0px, 0px, 5px, 0px, #000;
 }
 
@@ -110,10 +115,6 @@ body {
     width: 100%;
   }
 
-  .sticky + .melina {
-    padding-top: 60px;
-  }
-
   .nav .active {
       font-weight: bold;
   }
@@ -121,6 +122,14 @@ body {
   a:visited {
       font-weight: bold;
   }
+
+  .upper-space {
+      padding: 15px; 
+  }
+
+  .lower-space {
+    padding: 15px; 
+}
 
 /* Navigation End */
 
