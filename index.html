@@ -18,18 +18,19 @@
   <body>
 
     <!-- Navigation Bar -->
-
+    <a id="home"></a>
         <div class="logo">
             <img src="Personal Logo.svg">
         </div> 
 
-        <div>
-            <ul class="nav"> 
-                <li><a id="home">Home</a></li>
-                <li><a id="work">Work</a></li>
-                <li><a id="about">About</a></li>
-                <li><a id="contact">Contact</a></li>
+        <div class="nav-bar">
+            <ul class="nav" id="navbar"> 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li> 
             </ul>
+
         </div>
         
 
@@ -47,6 +48,7 @@
             </div>
 
     <!-- Work Section -->
+    <a id="work"></a>
     <div data-aos="fade-up"
     data-aos-duration="2000">
     <h2 class="work">Work</h2>
@@ -62,11 +64,13 @@
                 <a href="https://melinawebb.github.io/emojipedia-home/" target="_blank" class="hvr-grow mobile-img"><img src="Emojipedia Mobile Img.png"></a>
                 <h4>Emojipedia</h4>
                 <p class="description">A dictionary for emojis. <br> Built with: HTML/CSS & React.js.</p>
+                <a id="about"></a>
           </div>
         </div>
     </div>
 
     <!-- About Me Section -->
+
     <div data-aos="fade-up"
     data-aos-duration="2000">
     <h2 class="about-me">About Me</h2>
@@ -106,15 +110,15 @@
     </div> 
 
     <div class="button" data-aos="zoom-in"
-    data-aos-delay="400"
-    data-aos-duration="2000">
+    data-aos-delay="200"
+    data-aos-duration="1000">
         <a class="button1" style="text-align: center;" href="Melina_Webb_Developer_Resume (1).pdf" target="_blank">Resumé</a>
     </div>
 
 
     <!-- Contact Section -->
     <div class="background-color">
-    <div class="contact">
+    <div class="contact" id="contact">
         <h2>Let's get in touch.</h2>
         <div class="contact-links">
             <a href="https://www.linkedin.com/in/melina-webb/"><img class="linkedin" src="Linkedin Logo.png" ></a>
@@ -125,7 +129,20 @@
 
     <script>
         AOS.init();
-      </script>
+
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+            }
+        }
+    </script>
   </body>
 
 </html>
