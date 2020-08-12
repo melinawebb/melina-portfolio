@@ -12,7 +12,7 @@
 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  
 
   </head>
   <body>
@@ -27,10 +27,10 @@
 
         <div class="nav-bar">
             <ul class="nav" id="navbar"> 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li> 
+                <li><a class="nav-item" href="#home">Home</a></li>
+                <li><a class="nav-item" href="#work">Work</a></li>
+                <li><a class="nav-item" href="#about">About</a></li>
+                <li><a class="nav-item" href="#contact">Contact</a></li> 
             </ul>
 
         </div>
@@ -52,7 +52,7 @@
             </div>
 
     <!-- Work Section -->
-    <a id="work"></a>
+    <div id="work"></div>
     <div data-aos="fade-up"
     data-aos-duration="2000">
     <h2 class="work">Work</h2>
@@ -130,6 +130,8 @@
     </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
     <script>
         AOS.init();
 
@@ -137,7 +139,7 @@
 
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
-
+ 
         function myFunction() {
         if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
@@ -155,6 +157,7 @@
         }
 
     </script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 
 </html>
