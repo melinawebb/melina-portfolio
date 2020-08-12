@@ -85,6 +85,10 @@ body {
     font-size: 32px;
 }
 
+.home-item {
+    font-weight: bold;
+}
+
 .active {
     position: fixed;
     top: 0;
