@@ -1,4 +1,4 @@
-var homeElement = document.getElementById("home");
+/*var homeElement = document.getElementById("home");
 var workElement = document.getElementById("work");
 var aboutElement = document.getElementById("about");
 var contactElement = document.getElementById("contact");
@@ -7,7 +7,7 @@ var navItem = document.getElementsByClassName("nav-item");
 
 function decide() {
     var contactElementHeight = contactElement.clientHeight / 2;
-    if(contactElement.getBoundingClientRect().top <= window.innerHeight - contactElementHeight) {
+    if (contactElement.getBoundingClientRect().top <= window.innerHeight - contactElementHeight) {
         navItem[3].classList.add("clicked");
         navItem[0].classList.remove("clicked");
         navItem[1].classList.remove("clicked");
@@ -31,4 +31,4 @@ function decide() {
 }
 
 
-document.onscroll = decide;
+document.onscroll = decide;*/
